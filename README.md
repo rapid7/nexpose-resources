@@ -21,3 +21,7 @@ Links to other Github repositories that contain scripts and other resources.
 # Contributing
 
 See [the contributing file](.github/CONTRIBUTING.md) for information on how to contribute to this repository.
+
+# License
+
+The Nexpose Resources project is released under the BSD 3-Clause license (see [LICENSE](./LICENSE)).

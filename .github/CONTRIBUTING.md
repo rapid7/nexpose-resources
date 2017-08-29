@@ -6,7 +6,7 @@ Please include the following items in your pull request:
 
 ### License and Copyright Notice
 
-The Nexpose Resources project is distributed under the BSD 3-Clause license (see [LICENSE](../LICENSE)). All contributions will be licensed the same.
+The Nexpose Resources project is released under the BSD 3-Clause license (see [LICENSE](../LICENSE)). All contributions will be licensed the same.
 
 You may include a copyright notice within your resources and/or your readme file.
 
