@@ -1,7 +1,5 @@
 A script to enable, disable, or delete schedules on multiple or all sites at once.
 
-License: [MIT](./LICENSE)
-
 Usage:
 
 ```

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-# MIT License
 # Copyright (c) 2017 Rapid7, Inc.
+# License: BSD 3-Clause
 
 gem 'nexpose', '>= 5'
 require 'nexpose'

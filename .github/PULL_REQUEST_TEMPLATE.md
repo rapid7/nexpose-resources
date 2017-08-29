@@ -24,5 +24,4 @@
 <!--- You may remove any that do not apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 - [ ] I have updated the documentation accordingly (if changes are required).
-- [ ] I have included or specified a license. (For new files)
 - [ ] I am the copyright holder or have permission to publish this content. (For new files)

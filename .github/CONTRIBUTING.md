@@ -4,11 +4,11 @@ Fork the repository, clone your fork to your local system, create a new branch a
 
 Please include the following items in your pull request:
 
-### License
+### License and Copyright Notice
 
-This can either be a full copy of a license file, or simply a reference to a specific license. If you need help choosing a license be sure to visit these sites: https://choosealicense.com/ and https://opensource.org/licenses
+The Nexpose Resources project is distributed under the BSD 3-Clause license (see [LICENSE](../LICENSE)). All contributions will be licensed the same.
 
-You can put the license name inside your script or resource file, next to author information, or in the readme file.
+You may include a copyright notice within your resources and/or your readme file.
 
 ### Readme file
 
@@ -22,6 +22,6 @@ Your readme file should describe what your resource is and how to use it, with e
 
 For scripts it is simple enough to ensure the filename has the appropriate extension, such as `.rb` for Ruby, `.py` for Python, etc.
 
-For SQL Queries you can save as `.txt` or `.sql` - the latter will provide nice formatting when viewing on Github.
+For SQL queries you can save as `.txt` or `.sql` - the latter will provide nice formatting when viewing on Github.
 
 If your resource requires users to replace some variables be sure to note that with code comments. Avoid including default usernames, passwords, hostnames, or IP addresses. If an example must be provided they should not resolve to real things on the Internet. You may use `example.com` for a hostname or `127.0.0.1`, `192.168.0.1`, `10.0.0.1`, and similar private ranges for IP addresses.
