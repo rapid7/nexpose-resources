@@ -8,6 +8,8 @@ A collection of scripts, reports, SQL queries, and other resources for use with 
 
 Utility scripts typically built for a specific purpose. Each script may be available in multiple programming languages.
 
+You will primarily find scripts compatible with [nexpose-client](https://github.com/rapid7/nexpose-client) (Ruby) and [nexpose-client-python](https://github.com/rapid7/nexpose-client-python) (Python) in this repository.
+
 ## SQL Queries
 
 Ready to use queries for the SQL Query Export and/or Data Warehouse features for creating custom reports.
