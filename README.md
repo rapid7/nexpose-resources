@@ -16,7 +16,17 @@ Ready to use queries for the SQL Query Export and/or Data Warehouse features for
 
 ## Other Repositories
 
-Links to other Github repositories that contain scripts and other resources.
+Links to other Github repositories that contain scripts and other resources for Nexpose.
+
+### From Rapid7
+
+- https://github.com/rapid7/recog Service and system fingerprint matchers, many of which are used by Nexpose
+- https://github.com/rapid7/coverage-toolkit A toolkit for creating custom vulnerability content for Nexpose
+
+### From the Community
+
+- https://github.com/BrianWGray/nexpose Generic scripts for managing Nexpose
+- https://github.com/BrianWGray/cmty-nexpose-checks Custom vulnerabiltiy checks for Nexpose
 
 # Contributing
 
