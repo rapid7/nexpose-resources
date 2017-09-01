@@ -14,6 +14,8 @@ You will primarily find scripts compatible with [nexpose-client](https://github.
 
 Ready to use queries for the SQL Query Export and/or Data Warehouse features for creating custom reports.
 
+SQL query examples from the old community site have moved to the new knowledge base: https://kb.help.rapid7.com/docs/sql-query-export
+
 ## Other Repositories
 
 Links to other Github repositories that contain scripts and other resources for Nexpose.
