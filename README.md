@@ -30,6 +30,7 @@ Links to other Github repositories that contain scripts and other resources for 
 
 - https://github.com/BrianWGray/nexpose Generic scripts for managing Nexpose
 - https://github.com/BrianWGray/cmty-nexpose-checks Custom vulnerabiltiy checks for Nexpose
+- https://github.com/mb01r/NexposeCLI.rb A command line interface to perform Nexpose actions.
 
 # Contributing
 
