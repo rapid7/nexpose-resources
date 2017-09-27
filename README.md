@@ -25,6 +25,7 @@ Links to other Github repositories that contain scripts and other resources for 
 - https://github.com/rapid7/recog Service and system fingerprint matchers, many of which are used by Nexpose
 - https://github.com/rapid7/coverage-toolkit A toolkit for creating custom vulnerability content for Nexpose
 - https://github.com/rapid7/nexpose-warehouse-jasper-templates Jaspersoft Studio report templates for Nexpose Data Warehouse
+- https://github.com/rapid7-cookbooks/nexpose Chef cookbook for automated Nexpose deployment
 
 ### From the Community
 
