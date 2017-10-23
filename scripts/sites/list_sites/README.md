@@ -1,0 +1,1 @@
+The list_sites.ps1 script is an example for logging into Nexpose and retrieving a site listing using PowerShell.
