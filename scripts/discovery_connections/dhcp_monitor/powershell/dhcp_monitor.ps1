@@ -33,7 +33,7 @@ Where{$_.'connection-status' -eq 'Disconnected' -or $_.'engine-id' -eq 3} | wher
 ConvertTo-Html -As Table -Property Name,'Connection-Status','Engine-ID' -PreContent $Style
 $HTML2 = $HTML -replace "<td>3</td>", "<td>Using Local Engine</td>"
 if ($HTML2 -match 'Disconnected' -or $HTML2 -match "Using Local Engine"){
-[string[]]$recipients = "First Last <first.last@company.com>", "First Last <first.last@carlyle.com>"
+[string[]]$recipients = "First Last <first.last@company.com>", "First Last <first.last@company.com>"
 Write-Host 'sending email'
 send-mailmessage -to $recipients -from "nexpose@company.com" -subject "Nexpose Discovery Connections Alert!" -BodyAsHtml ($HTML2 | Out-String) -smtpserver <server address>
 } else {
