@@ -10,9 +10,9 @@ require 'eso'
 # Set up Nexpose and AWS credentials
 nexpose_host = 'localhost'
 nexpose_username = 'admin'
+# For security's sake, I kept the following in env vars rather than a plaintext file. If you have a bunch of
+# connections to set up, you may want to keep the aws vars in aws_configuration.yml or use some other kind of scheme.
 nexpose_password = ENV['NEXPOSE_PW']
-# For security's sake, I kept the following two in env vars rather than a plaintext file. If you have a bunch of
-# connections to set up, you may want to keep them in aws_configuration.yml or use some other kind of scheme.
 access_key_id = ENV['NEXPOSE_AWS_ACCESS_KEY_ID']
 secret_access_key = ENV['NEXPOSE_AWS_SECRET_ACCESS_KEY']
 
