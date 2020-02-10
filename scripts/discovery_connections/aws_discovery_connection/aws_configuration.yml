@@ -1,0 +1,51 @@
+AWS:
+  serviceName: amazon-web-services
+  configName: AWSAssetSync
+  configurationAttributes:
+    valueClass: Object
+    objectType: service_configuration
+    properties:
+      region:
+        valueClass: Array
+        items:
+        - valueClass: String
+          value: US West (Oregon)
+        - valueClass: String
+          value: US East (N. Virginia)
+      consoleInsideAWS:
+        valueClass: Boolean
+        value: false
+      engineInsideAWS:
+        valueClass: Boolean
+        value: true
+      useProxy:
+        valueClass: Boolean
+        value: false
+AWS with console in AWS and multiple ARNs:
+  serviceName: amazon-web-services
+  configName: AwsMultipleARNs
+  configurationAttributes:
+    valueClass: Object
+    objectType: service_configuration
+    properties:
+      region:
+        valueClass: Array
+        items:
+        - valueClass: String
+          value: US East (N. Virginia)
+      consoleInsideAWS:
+        valueClass: Boolean
+        value: true
+      engineInsideAWS:
+        valueClass: Boolean
+        value: true
+      arn:
+        valueClass: Array
+        items:
+        - valueClass: String
+          value: 'arn:aws:iam::000000000000:role/ExampleTestRole'
+        - valueClass: String
+          value: 'arn:aws:iam::000000000001:role/ExampleTestRoleInDifferentAccount'
+      useProxy:
+        valueClass: Boolean
+        value: false
