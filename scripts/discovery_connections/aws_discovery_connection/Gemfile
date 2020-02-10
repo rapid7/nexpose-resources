@@ -1,0 +1,1 @@
+gem 'nexpose', git: 'git://github.com/rapid7/nexpose-client.git'
