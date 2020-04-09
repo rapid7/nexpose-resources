@@ -1,6 +1,6 @@
-AWS:
+AWS 0:
   serviceName: amazon-web-services
-  configName: AWSAssetSync
+  configName: AWSAssetSync0
   configurationAttributes:
     valueClass: Object
     objectType: service_configuration
@@ -9,43 +9,70 @@ AWS:
         valueClass: Array
         items:
         - valueClass: String
-          value: US West (Oregon)
-        - valueClass: String
-          value: US East (N. Virginia)
-      consoleInsideAWS:
-        valueClass: Boolean
-        value: false
-      engineInsideAWS:
-        valueClass: Boolean
-        value: true
-      useProxy:
-        valueClass: Boolean
-        value: false
-AWS with console in AWS and multiple ARNs:
-  serviceName: amazon-web-services
-  configName: AwsMultipleARNs
-  configurationAttributes:
-    valueClass: Object
-    objectType: service_configuration
-    properties:
-      region:
-        valueClass: Array
-        items:
-        - valueClass: String
-          value: US East (N. Virginia)
+          value: All regions
       consoleInsideAWS:
         valueClass: Boolean
         value: true
       engineInsideAWS:
         valueClass: Boolean
-        value: true
+        value: false
       arn:
         valueClass: Array
         items:
         - valueClass: String
-          value: 'arn:aws:iam::000000000000:role/ExampleTestRole'
+          value: 'arn:aws:iam::000000000000:role/ExampleTestRole0'
+      useProxy:
+        valueClass: Boolean
+        value: false
+AWS 1:
+  serviceName: amazon-web-services
+  configName: AWSAssetSync1
+  configurationAttributes:
+    valueClass: Object
+    objectType: service_configuration
+    properties:
+      region:
+        valueClass: Array
+        items:
         - valueClass: String
-          value: 'arn:aws:iam::000000000001:role/ExampleTestRoleInDifferentAccount'
+          value: US East (N. Virginia)
+      consoleInsideAWS:
+        valueClass: Boolean
+        value: true
+      engineInsideAWS:
+        valueClass: Boolean
+        value: false
+      arn:
+        valueClass: Array
+        items:
+        - valueClass: String
+          value: 'arn:aws:iam::000000000000:role/ExampleTestRole1'
+      useProxy:
+        valueClass: Boolean
+        value: false
+AWS 2:
+  serviceName: amazon-web-services
+  configName: AWSAssetSync2
+  configurationAttributes:
+    valueClass: Object
+    objectType: service_configuration
+    properties:
+      region:
+        valueClass: Array
+        items:
+        - valueClass: String
+          value: All regions
+      consoleInsideAWS:
+        valueClass: Boolean
+        value: true
+      engineInsideAWS:
+        valueClass: Boolean
+        value: false
+      arn:
+        valueClass: Array
+        items:
+        - valueClass: String
+          value: 'arn:aws:iam::000000000000:role/ExampleTestRole2'
       useProxy:
         valueClass: Boolean
         value: false
