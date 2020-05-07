@@ -1,0 +1,7 @@
+{
+  "gemName": "rapid7_vm_console",
+  "moduleName": "Rapid7VmConsole",
+  "gemVersion": "3.0.0-6.5.0",
+  "gemSummary": "A ruby wrapper for the Rapid7 Nexpose and InsightVM Console API v3",
+  "gemLicense": "MIT"
+}
