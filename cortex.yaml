@@ -1,0 +1,15 @@
+---
+info:
+  title: Nexpose Resources
+  description: Scripts, SQL queries, and other resources for Nexpose
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/nexpose-resources
+  x-cortex-tag: nexpose-resources
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: vm-console
+openapi: 3.0.1
+servers:
+- url: "/"
