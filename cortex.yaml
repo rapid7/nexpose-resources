@@ -5,11 +5,11 @@ info:
   x-cortex-git:
     github:
       alias: r7org
-      repository: rapid7/nexpose-resources 
+      repository: rapid7/nexpose-resources
   x-cortex-tag: nexpose-resources
   x-cortex-type: service
   x-cortex-domain-parents:
-  - tag: insightvm
+  - tag: vm-console
   x-cortex-groups:
    - target:not-deployed
    - strategy:on-prem
