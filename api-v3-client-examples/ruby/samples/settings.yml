@@ -1,0 +1,8 @@
+---
+:console:
+  :host: 'localhost:3780'
+  :user: 'nxadmin'
+  :pass: 'nxpassword'
+  :verify_ssl: false
+  :verify_ssl_host: false
+  :debug: false
