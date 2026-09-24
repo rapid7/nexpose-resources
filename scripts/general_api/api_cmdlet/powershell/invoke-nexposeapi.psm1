@@ -6,6 +6,16 @@ Function Invoke-NexposeAPI
 <#
 .SYNOPSIS
     Run the specified API command, giving the required attributes as a hash array. Returns XML output from Nexpose
+.NOTES
+    The console's TLS certificate must be trusted by the machine running this cmdlet. If your console uses a
+    self-signed certificate, import it into the local trust store (Cert:\LocalMachine\Root) rather than disabling
+    validation.
+
+    Do not set [System.Net.ServicePointManager]::ServerCertificateValidationCallback to bypass validation. That
+    property is static on the AppDomain, so it applies to every subsequent outbound request in the PowerShell
+    session -- not just this cmdlet's call -- and there is no indication it is in effect. On PowerShell 6 and
+    later, Invoke-WebRequest -SkipCertificateCheck is correctly scoped to the single request if a bypass is
+    genuinely needed.
 #>
 
     [CmdletBinding()]
@@ -54,7 +64,6 @@ Function Invoke-NexposeAPI
             }
         }
 
-    [System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }
     $Response = Invoke-WebRequest -URI $URL -Body $RequestBody -ContentType 'text/xml' -Method post
 
     # Should be some sort of error checking here
