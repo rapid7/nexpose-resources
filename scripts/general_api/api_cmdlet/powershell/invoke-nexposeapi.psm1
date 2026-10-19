@@ -8,14 +8,13 @@ Function Invoke-NexposeAPI
     Run the specified API command, giving the required attributes as a hash array. Returns XML output from Nexpose
 .NOTES
     The console's TLS certificate must be trusted by the machine running this cmdlet. If your console uses a
-    self-signed certificate, import it into the local trust store (Cert:\LocalMachine\Root) rather than disabling
-    validation.
+    self-signed certificate, trust it rather than disabling validation. On Windows, import it into
+    Cert:\CurrentUser\Root (no elevation needed); on macOS/Linux, add it to the operating system trust store.
+    See the README "TLS certificates" section.
 
-    Do not set [System.Net.ServicePointManager]::ServerCertificateValidationCallback to bypass validation. That
-    property is static on the AppDomain, so it applies to every subsequent outbound request in the PowerShell
-    session -- not just this cmdlet's call -- and there is no indication it is in effect. On PowerShell 6 and
-    later, Invoke-WebRequest -SkipCertificateCheck is correctly scoped to the single request if a bypass is
-    genuinely needed.
+    Do not set [System.Net.ServicePointManager]::ServerCertificateValidationCallback to bypass validation. On
+    Windows PowerShell 5.1 that property is static on the AppDomain, so it applies to every subsequent outbound
+    request in the PowerShell session -- not just this cmdlet's call -- and there is no indication it is in effect.
 #>
 
     [CmdletBinding()]
@@ -64,7 +63,14 @@ Function Invoke-NexposeAPI
             }
         }
 
-    $Response = Invoke-WebRequest -URI $URL -Body $RequestBody -ContentType 'text/xml' -Method post
+    Try
+        {
+        $Response = Invoke-WebRequest -URI $URL -Body $RequestBody -ContentType 'text/xml' -Method post
+        }
+    Catch
+        {
+        throw "Connection to $Server failed: $($_.Exception.Message.TrimEnd('.')). See README 'TLS certificates'."
+        }
 
     # Should be some sort of error checking here
 
